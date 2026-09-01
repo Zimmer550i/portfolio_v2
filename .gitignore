@@ -43,3 +43,17 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Environment variables & Secrets
+.env
+.env.*
+*.env
+*.key
+*.pem
+*secret*.js
+*secret*.json
+web/secret.js
+web/*secret*
+
+# Firebase cache
+.firebase/

@@ -1,0 +1,21 @@
+{
+  "projects": {
+    "default": "portfolio-cddfa"
+  },
+  "targets": {
+    "portfolio-cddfa": {
+      "hosting": {
+        "portfolio-cddfa": [
+          "portfolio-cddfa"
+        ],
+        "zimmer550i": [
+          "zimmer550i"
+        ],
+        "sakif049": [
+          "sakif049"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
