@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_v2/core/theme/palette_color.dart';
 
 /// A cohesive color palette configuration comprising primary, neutral,
 /// semantic, and surface colors for both light and dark modes.
@@ -7,14 +6,14 @@ class ColorPalette {
   /// Name of this palette (e.g. "Emerald Green", "Ocean Blue")
   final String name;
 
-  /// Primary brand color swatch with shades from 25 to 900
-  final PaletteColor primary;
+  /// Primary brand color swatch with shades from 50 to 900
+  final MaterialColor primary;
 
-  /// Neutral grayscale swatch with shades from 25 to 900
-  final PaletteColor neutral;
+  /// Neutral grayscale swatch with shades from 50 to 900
+  final MaterialColor neutral;
 
-  /// Optional secondary accent swatch with shades from 25 to 900
-  final PaletteColor? secondary;
+  /// Optional secondary accent swatch with shades from 50 to 900
+  final MaterialColor? secondary;
 
   /// Semantic error color (e.g. Color(0xFFDC2626))
   final Color error;
@@ -101,9 +100,9 @@ class ColorPalette {
   /// Creates a copy of this palette with selectively overridden attributes.
   ColorPalette copyWith({
     String? name,
-    PaletteColor? primary,
-    PaletteColor? neutral,
-    PaletteColor? secondary,
+    MaterialColor? primary,
+    MaterialColor? neutral,
+    MaterialColor? secondary,
     Color? error,
     Color? warning,
     Color? success,

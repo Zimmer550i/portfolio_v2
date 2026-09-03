@@ -17,6 +17,7 @@ dependencies:
   get: ^4.7.3
   zo_animated_border: ^1.0.8
   cached_network_image: ^4.0.0
+  flutter_svg: ^2.3.0
 
 dev_dependencies:
   flutter_test:

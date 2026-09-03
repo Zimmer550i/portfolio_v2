@@ -15,12 +15,8 @@ class _ShellState extends State<Shell> {
     return Scaffold(
       body: Row(
         children: [
-          ConstrainedBox(
-            constraints: BoxConstraints(maxWidth: 400),
-            child: Padding(
-              padding: const EdgeInsets.all(48.0),
-              child: SideNavBar(),
-            ),
+          Flexible(
+            child: SideNavBar(),
           ),
           SizedBox(
             width: 5,
@@ -49,6 +45,9 @@ class _ShellState extends State<Shell> {
               ],
             ),
           ),
+          Expanded(
+            flex: 5,
+            child: FlutterLogo())
         ],
       ),
     );

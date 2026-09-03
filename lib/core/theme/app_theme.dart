@@ -3,7 +3,6 @@ import 'package:portfolio_v2/core/theme/app_colors.dart';
 import 'package:portfolio_v2/core/theme/app_palettes.dart';
 import 'package:portfolio_v2/core/theme/app_texts.dart';
 import 'package:portfolio_v2/core/theme/color_palette.dart';
-import 'package:portfolio_v2/core/theme/palette_color.dart';
 
 /// Complete application theme definitions for light and dark modes.
 ///
@@ -38,7 +37,9 @@ class AppTheme {
         elevation: 0,
         scrolledUnderElevation: 0.5,
         centerTitle: false,
-        titleTextStyle: AppTexts.txlb.copyWith(color: activePalette.neutral.shade800),
+        titleTextStyle: AppTexts.txlb.copyWith(
+          color: activePalette.neutral.shade800,
+        ),
         iconTheme: IconThemeData(color: activePalette.neutral.shade700),
       ),
 
@@ -60,7 +61,9 @@ class AppTheme {
           foregroundColor: Colors.white,
           elevation: 0,
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
           textStyle: AppTexts.tsmm.copyWith(color: Colors.white),
         ),
       ),
@@ -69,8 +72,12 @@ class AppTheme {
           foregroundColor: activePalette.neutral.shade800,
           side: BorderSide(color: activePalette.neutral.shade200),
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-          textStyle: AppTexts.tsmm.copyWith(color: activePalette.neutral.shade800),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          textStyle: AppTexts.tsmm.copyWith(
+            color: activePalette.neutral.shade800,
+          ),
         ),
       ),
       textButtonTheme: TextButtonThemeData(
@@ -78,7 +85,9 @@ class AppTheme {
           foregroundColor: activePalette.primary.shade500,
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-          textStyle: AppTexts.tsmm.copyWith(color: activePalette.primary.shade500),
+          textStyle: AppTexts.tsmm.copyWith(
+            color: activePalette.primary.shade500,
+          ),
         ),
       ),
 
@@ -86,9 +95,16 @@ class AppTheme {
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: activePalette.surfaceLight,
-        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-        hintStyle: AppTexts.tsmr.copyWith(color: activePalette.neutral.shade300),
-        labelStyle: AppTexts.tsmr.copyWith(color: activePalette.neutral.shade600),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 16,
+          vertical: 14,
+        ),
+        hintStyle: AppTexts.tsmr.copyWith(
+          color: activePalette.neutral.shade300,
+        ),
+        labelStyle: AppTexts.tsmr.copyWith(
+          color: activePalette.neutral.shade600,
+        ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(color: activePalette.neutral.shade200),
@@ -99,7 +115,10 @@ class AppTheme {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: activePalette.primary.shade500, width: 1.5),
+          borderSide: BorderSide(
+            color: activePalette.primary.shade500,
+            width: 1.5,
+          ),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
@@ -117,7 +136,9 @@ class AppTheme {
         backgroundColor: activePalette.neutral.shade50,
         side: BorderSide(color: activePalette.neutral.shade100),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-        labelStyle: AppTexts.txsm.copyWith(color: activePalette.neutral.shade700),
+        labelStyle: AppTexts.txsm.copyWith(
+          color: activePalette.neutral.shade700,
+        ),
       ),
 
       // Theme Extensions
@@ -178,8 +199,12 @@ class AppTheme {
           foregroundColor: activePalette.neutral.shade900,
           elevation: 0,
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-          textStyle: AppTexts.tsmm.copyWith(color: activePalette.neutral.shade900),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          textStyle: AppTexts.tsmm.copyWith(
+            color: activePalette.neutral.shade900,
+          ),
         ),
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
@@ -187,7 +212,9 @@ class AppTheme {
           foregroundColor: activePalette.neutral.shade100,
           side: BorderSide(color: activePalette.neutral.shade700),
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
           textStyle: AppTexts.dark.tsmm,
         ),
       ),
@@ -196,7 +223,9 @@ class AppTheme {
           foregroundColor: activePalette.primary.shade300,
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-          textStyle: AppTexts.tsmm.copyWith(color: activePalette.primary.shade300),
+          textStyle: AppTexts.tsmm.copyWith(
+            color: activePalette.primary.shade300,
+          ),
         ),
       ),
 
@@ -204,9 +233,16 @@ class AppTheme {
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: activePalette.surfaceDark,
-        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-        hintStyle: AppTexts.tsmr.copyWith(color: activePalette.neutral.shade500),
-        labelStyle: AppTexts.tsmr.copyWith(color: activePalette.neutral.shade300),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 16,
+          vertical: 14,
+        ),
+        hintStyle: AppTexts.tsmr.copyWith(
+          color: activePalette.neutral.shade500,
+        ),
+        labelStyle: AppTexts.tsmr.copyWith(
+          color: activePalette.neutral.shade300,
+        ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide(color: activePalette.neutral.shade700),
@@ -217,7 +253,10 @@ class AppTheme {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: BorderSide(color: activePalette.primary.shade400, width: 1.5),
+          borderSide: BorderSide(
+            color: activePalette.primary.shade400,
+            width: 1.5,
+          ),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
@@ -235,7 +274,9 @@ class AppTheme {
         backgroundColor: activePalette.neutral.shade800,
         side: BorderSide(color: activePalette.neutral.shade700),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-        labelStyle: AppTexts.txsm.copyWith(color: activePalette.neutral.shade200),
+        labelStyle: AppTexts.txsm.copyWith(
+          color: activePalette.neutral.shade200,
+        ),
       ),
 
       // Theme Extensions
@@ -265,8 +306,8 @@ class AppTheme {
 /// Allows accessing contextual colors via `Theme.of(context).extension<AppColorsExtension>()`
 /// or simply `context.colors`.
 class AppColorsExtension extends ThemeExtension<AppColorsExtension> {
-  final PaletteColor primary;
-  final PaletteColor neutral;
+  final MaterialColor primary;
+  final MaterialColor neutral;
   final Color background;
   final Color surface;
   final Color textPrimary;
@@ -295,14 +336,19 @@ class AppColorsExtension extends ThemeExtension<AppColorsExtension> {
     required this.info,
   });
 
-  factory AppColorsExtension.fromPalette(ColorPalette palette, {required bool isDark}) {
+  factory AppColorsExtension.fromPalette(
+    ColorPalette palette, {
+    required bool isDark,
+  }) {
     return AppColorsExtension(
       primary: palette.primary,
       neutral: palette.neutral,
       background: isDark ? palette.backgroundDark : palette.backgroundLight,
       surface: isDark ? palette.surfaceDark : palette.surfaceLight,
       textPrimary: isDark ? palette.neutral.shade50 : palette.neutral.shade800,
-      textSecondary: isDark ? palette.neutral.shade300 : palette.neutral.shade400,
+      textSecondary: isDark
+          ? palette.neutral.shade300
+          : palette.neutral.shade400,
       textMuted: isDark ? palette.neutral.shade500 : palette.neutral.shade200,
       border: isDark ? palette.neutral.shade800 : palette.neutral.shade100,
       divider: isDark ? palette.neutral.shade800 : palette.neutral.shade50,
@@ -315,8 +361,8 @@ class AppColorsExtension extends ThemeExtension<AppColorsExtension> {
 
   @override
   ThemeExtension<AppColorsExtension> copyWith({
-    PaletteColor? primary,
-    PaletteColor? neutral,
+    MaterialColor? primary,
+    MaterialColor? neutral,
     Color? background,
     Color? surface,
     Color? textPrimary,
@@ -358,7 +404,8 @@ class AppColorsExtension extends ThemeExtension<AppColorsExtension> {
       background: Color.lerp(background, other.background, t) ?? background,
       surface: Color.lerp(surface, other.surface, t) ?? surface,
       textPrimary: Color.lerp(textPrimary, other.textPrimary, t) ?? textPrimary,
-      textSecondary: Color.lerp(textSecondary, other.textSecondary, t) ?? textSecondary,
+      textSecondary:
+          Color.lerp(textSecondary, other.textSecondary, t) ?? textSecondary,
       textMuted: Color.lerp(textMuted, other.textMuted, t) ?? textMuted,
       border: Color.lerp(border, other.border, t) ?? border,
       divider: Color.lerp(divider, other.divider, t) ?? divider,

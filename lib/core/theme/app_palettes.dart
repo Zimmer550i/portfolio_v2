@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_v2/core/theme/color_palette.dart';
-import 'package:portfolio_v2/core/theme/palette_color.dart';
 
 /// Predefined color palettes available out of the box.
 ///
@@ -9,8 +8,7 @@ class AppPalettes {
   // ===========================================================================
   // Shared Neutral Grayscale Swatch (Black/Gray)
   // ===========================================================================
-  static const PaletteColor black = PaletteColor(0xFF545454, {
-    25: Color(0xFFFAFAFA),
+  static const MaterialColor black = MaterialColor(0xFF545454, {
     50: Color(0xFFF5F5F5),
     100: Color(0xFFE6E6E6),
     200: Color(0xFFB8B8B8),
@@ -24,8 +22,7 @@ class AppPalettes {
   });
 
   // Alternative Slate Neutral (cool-tinted gray)
-  static const PaletteColor slate = PaletteColor(0xFF64748B, {
-    25: Color(0xFFF8FAFC),
+  static const MaterialColor slate = MaterialColor(0xFF64748B, {
     50: Color(0xFFF1F5F9),
     100: Color(0xFFE2E8F0),
     200: Color(0xFFCBD5E1),
@@ -41,8 +38,7 @@ class AppPalettes {
   // ===========================================================================
   // 1. Emerald Green (Default / Portfolio Brand)
   // ===========================================================================
-  static const PaletteColor green = PaletteColor(0xFF005B36, {
-    25: Color(0xFFF3F8F6),
+  static const MaterialColor green = MaterialColor(0xFF005B36, {
     50: Color(0xFFE6EFEB),
     100: Color(0xFFC4D8D0),
     200: Color(0xFF8EB9A6),
@@ -68,8 +64,7 @@ class AppPalettes {
   // ===========================================================================
   // 2. Ocean Blue
   // ===========================================================================
-  static const PaletteColor blue = PaletteColor(0xFF0284C7, {
-    25: Color(0xFFF0F9FF),
+  static const MaterialColor blue = MaterialColor(0xFF0284C7, {
     50: Color(0xFFE0F2FE),
     100: Color(0xFFBAE6FD),
     200: Color(0xFF7DD3FC),
@@ -95,8 +90,7 @@ class AppPalettes {
   // ===========================================================================
   // 3. Royal Violet
   // ===========================================================================
-  static const PaletteColor violet = PaletteColor(0xFF7C3AED, {
-    25: Color(0xFFFAF5FF),
+  static const MaterialColor violet = MaterialColor(0xFF7C3AED, {
     50: Color(0xFFF3E8FF),
     100: Color(0xFFE9D5FF),
     200: Color(0xFFD8B4FE),
@@ -122,8 +116,7 @@ class AppPalettes {
   // ===========================================================================
   // 4. Sunset Amber
   // ===========================================================================
-  static const PaletteColor amber = PaletteColor(0xFFD97706, {
-    25: Color(0xFFFFFBEB),
+  static const MaterialColor amber = MaterialColor(0xFFD97706, {
     50: Color(0xFFFEF3C7),
     100: Color(0xFFFDE68A),
     200: Color(0xFFFCD34D),
@@ -149,8 +142,7 @@ class AppPalettes {
   // ===========================================================================
   // 5. Slate Monochrome
   // ===========================================================================
-  static const PaletteColor monochrome = PaletteColor(0xFF334155, {
-    25: Color(0xFFF8FAFC),
+  static const MaterialColor monochrome = MaterialColor(0xFF334155, {
     50: Color(0xFFF1F5F9),
     100: Color(0xFFE2E8F0),
     200: Color(0xFFCBD5E1),
@@ -176,8 +168,7 @@ class AppPalettes {
   // ===========================================================================
   // 6. Crimson Red
   // ===========================================================================
-  static const PaletteColor crimson = PaletteColor(0xFFDC2626, {
-    25: Color(0xFFFEF2F2),
+  static const MaterialColor crimson = MaterialColor(0xFFDC2626, {
     50: Color(0xFFFEE2E2),
     100: Color(0xFFFECACA),
     200: Color(0xFFFCA5A5),
