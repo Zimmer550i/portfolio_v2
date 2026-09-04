@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_v2/core/theme/app_colors.dart';
+import 'package:portfolio_v2/sites/minimalisto/core/theme/app_colors.dart';
 
 /// AppTexts
 /// ---------------------------------------------------------------------------
@@ -152,7 +152,7 @@ class AppTexts {
   // ===========================================================================
   static final AppTextThemeSet light = AppTextThemeSet(
     isDark: false,
-    textColor: AppColors.black.shade400,
+    textColor: AppColors.neutral.shade400,
   );
 
   static final AppTextThemeSet dark = AppTextThemeSet(

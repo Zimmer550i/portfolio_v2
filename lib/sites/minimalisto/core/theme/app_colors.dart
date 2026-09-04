@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_v2/core/theme/app_palettes.dart';
-import 'package:portfolio_v2/core/theme/color_palette.dart';
+import 'package:portfolio_v2/sites/minimalisto/core/theme/app_palettes.dart';
+import 'package:portfolio_v2/sites/minimalisto/core/theme/color_palette.dart';
 
 /// Central application colors system.
 ///
@@ -10,23 +10,11 @@ import 'package:portfolio_v2/core/theme/color_palette.dart';
 /// - Semantic design tokens ([primary], [neutral], [error], [warning], [success], [info])
 /// - Context-aware theme resolution ([AppColors.of(context)])
 class AppColors {
-  // ===========================================================================
-  // Base Constants (Direct match to lib/example/app_colors.dart)
-  // ===========================================================================
-  static const Color white = Color(0xFFFFFFFF);
-  static const Color bg = Color(0xFFFAF9F6);
-  static const Color red = Color(0xFFDC2626);
-
-  /// Default Green Swatch (shades 50..900)
-  static const MaterialColor green = AppPalettes.green;
-
-  /// Default Black/Gray Swatch (shades 50..900)
-  static const MaterialColor black = AppPalettes.black;
-
+  static Color white = Colors.white;
   // ===========================================================================
   // Active Palette State Management
   // ===========================================================================
-  static ColorPalette _currentPalette = AppPalettes.emerald;
+  static ColorPalette _currentPalette = AppPalettes.oceanBlue;
 
   /// Gets the currently active [ColorPalette].
   static ColorPalette get currentPalette => _currentPalette;

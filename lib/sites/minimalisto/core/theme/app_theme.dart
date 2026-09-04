@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_v2/core/theme/app_colors.dart';
-import 'package:portfolio_v2/core/theme/app_palettes.dart';
-import 'package:portfolio_v2/core/theme/app_texts.dart';
-import 'package:portfolio_v2/core/theme/color_palette.dart';
+import 'package:portfolio_v2/sites/minimalisto/core/theme/app_colors.dart';
+import 'package:portfolio_v2/sites/minimalisto/core/theme/app_palettes.dart';
+import 'package:portfolio_v2/sites/minimalisto/core/theme/app_texts.dart';
+import 'package:portfolio_v2/sites/minimalisto/core/theme/color_palette.dart';
 
 /// Complete application theme definitions for light and dark modes.
 ///
@@ -457,7 +457,7 @@ extension AppThemeContextExtensions on BuildContext {
   /// Semantic and palette colors for the current theme
   AppColorsExtension get colors =>
       Theme.of(this).extension<AppColorsExtension>() ??
-      AppColorsExtension.fromPalette(AppPalettes.emerald, isDark: isDark);
+      AppColorsExtension.fromPalette(AppPalettes.oceanBlue, isDark: isDark);
 
   /// Theme-adapted typography set
   AppTextThemeSet get texts =>

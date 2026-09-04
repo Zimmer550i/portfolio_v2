@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_v2/core/theme/theme.dart';
+import 'package:get/get.dart';
+import 'package:portfolio_v2/sites/minimalisto/features/shell/controllers/shell_controller.dart';
+import 'package:portfolio_v2/sites/minimalisto/features/shell/widgets/scroll_bar.dart';
 import 'package:portfolio_v2/sites/minimalisto/features/shell/widgets/side_nav_bar.dart';
 
 class Shell extends StatefulWidget {
@@ -12,42 +14,29 @@ class Shell extends StatefulWidget {
 class _ShellState extends State<Shell> {
   @override
   Widget build(BuildContext context) {
+    final controller = Get.find<ShellController>();
+
     return Scaffold(
       body: Row(
         children: [
-          Flexible(
-            child: SideNavBar(),
-          ),
-          SizedBox(
-            width: 5,
-            child: Stack(
-              clipBehavior: Clip.hardEdge,
-              children: [
-                Container(
-                  height: double.infinity,
-                  width: 5,
-                  color: context.colors.primary.shade300,
-                ),
-                Container(
-                  height: MediaQuery.of(context).size.width / 4,
-                  width: 5,
-                  decoration: BoxDecoration(
-                    color: context.colors.primary,
-                    boxShadow: [
-                      BoxShadow(
-                        color: context.colors.primary.withValues(alpha: 0.5),
-                        blurRadius: 20,
-                        spreadRadius: 5,
-                      ),
-                    ],
-                  ),
-                ),
-              ],
+          const Flexible(child: SideNavBar()),
+          const ScrollBar(),
+          Expanded(
+            flex: 4,
+            child: NotificationListener<ScrollNotification>(
+              onNotification: (notification) {
+                final metrics = notification.metrics;
+                if (metrics.axis == Axis.vertical) {
+                  controller.currentScroll.value = metrics.pixels;
+                  controller.maxScroll.value = metrics.maxScrollExtent;
+                  controller.viewportDimension.value =
+                      metrics.viewportDimension;
+                }
+                return false;
+              },
+              child: Obx(() => controller.getPage),
             ),
           ),
-          Expanded(
-            flex: 5,
-            child: FlutterLogo())
         ],
       ),
     );
