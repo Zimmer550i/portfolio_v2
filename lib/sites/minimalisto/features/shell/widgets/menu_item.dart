@@ -61,7 +61,7 @@ class MenuItem extends StatelessWidget {
               spacing: 8,
               children: [
                 SvgPicture.asset(
-                  "icons/minimalisto/$iconName.svg",
+                  "assets/icons/minimalisto/$iconName.svg",
                   height: 32,
                   width: 32,
                   colorFilter: ColorFilter.mode(

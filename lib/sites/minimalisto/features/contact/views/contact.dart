@@ -59,7 +59,6 @@ class Contact extends StatelessWidget {
                     ),
                   ],
                   const SizedBox(height: 32),
-                  for (int i = 0; i < 20; i++) FlutterLogo(size: 500),
                   const InputFields(),
                 ],
               ),
