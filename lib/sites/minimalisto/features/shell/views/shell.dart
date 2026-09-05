@@ -17,25 +17,29 @@ class _ShellState extends State<Shell> {
     final controller = Get.find<ShellController>();
 
     return Scaffold(
-      body: Row(
+      body: Stack(
         children: [
-          const Flexible(child: SideNavBar()),
-          const ScrollBar(),
-          Expanded(
-            flex: 4,
-            child: NotificationListener<ScrollNotification>(
-              onNotification: (notification) {
-                final metrics = notification.metrics;
-                if (metrics.axis == Axis.vertical) {
-                  controller.currentScroll.value = metrics.pixels;
-                  controller.maxScroll.value = metrics.maxScrollExtent;
-                  controller.viewportDimension.value =
-                      metrics.viewportDimension;
-                }
-                return false;
-              },
-              child: Obx(() => controller.getPage),
-            ),
+          Row(
+            children: [
+              const Flexible(child: SideNavBar()),
+              const ScrollBar(),
+              Expanded(
+                flex: 4,
+                child: NotificationListener<ScrollNotification>(
+                  onNotification: (notification) {
+                    final metrics = notification.metrics;
+                    if (metrics.axis == Axis.vertical) {
+                      controller.currentScroll.value = metrics.pixels;
+                      controller.maxScroll.value = metrics.maxScrollExtent;
+                      controller.viewportDimension.value =
+                          metrics.viewportDimension;
+                    }
+                    return false;
+                  },
+                  child: Obx(() => controller.getPage),
+                ),
+              ),
+            ],
           ),
         ],
       ),

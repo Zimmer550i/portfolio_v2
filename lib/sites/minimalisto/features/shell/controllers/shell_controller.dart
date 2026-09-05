@@ -1,13 +1,10 @@
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:portfolio_v2/sites/minimalisto/features/contact/views/contact.dart';
+import 'package:portfolio_v2/sites/minimalisto/features/home/views/home.dart';
 
 class ShellController extends GetxController {
-  final List<Widget> _pages = const [
-    FlutterLogo(size: 200),
-    Contact(),
-    FlutterLogo(size: 800),
-  ];
+  final List<Widget> _pages = const [Home(), Contact(), FlutterLogo(size: 800)];
 
   final RxInt selectedIndex = RxInt(0);
   final RxInt hoveredIndex = RxInt(0);

@@ -24,8 +24,9 @@ class ScrollBar extends StatelessWidget {
           if (max <= 0 || trackHeight <= 0) {
             return SizedBox(
               width: 3,
+              height: trackHeight,
               child: Container(
-                height: double.infinity,
+                height: trackHeight,
                 width: 3,
                 color: context.colors.primary.shade300.withValues(alpha: 0.3),
               ),
